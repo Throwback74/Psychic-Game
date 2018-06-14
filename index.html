@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic</title>
+</head>
+<body>
+    <h1>The Psychic Game</h1>
+
+    <p>Guess what Letter Im thinking of?</p>
+
+    <p id="score"></p>
+    <p id="losses"></p>
+    <p id="guessesLeft"></p>
+    <p id="guessesMade"></p>
+    
+<script>
+$(document).ready(function() {
+
+    var userScore = 0
+    var userLosses = 0
+    var userGuesses = 
+
+
+  document.onkeyup = function(event) {
+
+    var letter = event.key.toLowerCase();
+
+    console.log()
+
+    function random_character() {
+      var chars = "abcdefghijklmnopqrstuvwxyz";
+        
+      console.log(chars.substr( Math.floor(Math.random() * 24), 1));
+
+    };
+
+}
+
+    // if(letter === )
+
+
+});
+</script>
+
+</body>
+</html>
