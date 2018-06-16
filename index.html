@@ -14,7 +14,7 @@
     <p id="score"></p>
     <p id="losses"></p>
     <p id="guessesLeft"></p>
-    <p id="guessesMade"></p>
+    <p id="guessesMade">Your Guesses Made So Far: <span id="guessText"></span></p>
     
 <script>
 // set the score, losses and guesses left to 0
@@ -37,6 +37,18 @@ document.onkeyup = function(event) {
     var letter = (event.key).toLowerCase();
 
     console.log(letter)
+
+    function myFunction(array) {
+
+        for(var i = 0; i < array.length; i++) {
+            document.write(array[i]);
+        }
+    }
+
+myFunction(userChoices);
+//make a function to reset the picker, up the score or losses and reset the guesses left once the user wins/loses
+
+//make a function that adds each letter guessed to the empty array - userChoices
 
 
 
